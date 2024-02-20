@@ -1,4 +1,4 @@
-# Exercise 1
+# Exercise 1: Fixed Bias for NPN Transistor
 
 ## Goal: 
 Determined R1 value, let Ie ~= 1mA, Vce=6V, assume 2N2222 𝜷 value ~= 200
@@ -7,7 +7,7 @@ Determined R1 value, let Ie ~= 1mA, Vce=6V, assume 2N2222 𝜷 value ~= 200
 ## Requirements: 
 - List calculation assumption,
 - List steps that calculate R1
-- Uset SPICE to verify results
+- Use SPICE to verify results
 
 
 # Assumption
