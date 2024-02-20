@@ -27,7 +27,7 @@ After creating the schematic in KiCad, and filled in the resistor values, I crea
 
 I probed the voltage on Vc, and found it to be ~9V, which is very off from 6V.
 
-![SPICE graph, with Vc being around 9.04V and Ic, Ib being only 100x apart](E1-BadBias-spice-before.png "SPICE command, Transient w/ 0.01s runtime")
+![SPICE graph, with Vc being around 9.04V and Ic, Ib being only 100x apart](E1-BadBias-spice-before.png "SPICE graph, with Vc being around 9.04V and Ic, Ib being only 100x apart")
 
 I immediately suspected the issue is at ngspice, KiCad's SPICE simulator, so I installed a version of LTSpice on Wine.
 
