@@ -1,0 +1,14 @@
+version 2
+1
+9
+.tran 10m 10m{return}.kicad adjustpaths{return}.save all{return}.probe alli
+3
+2
+I(R1)
+ 
+2
+I(R2)
+ 
+1
+V(Net-_Q1-C_)
+ 
