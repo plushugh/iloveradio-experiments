@@ -14,8 +14,8 @@ Determined R1 value, let Ie ~= 1mA, Vce=6V, assume 2N2222 𝜷 value ~= 200
 ![KiCad schematic](E1-BadBias.png "KiCad schematic")
 
 # Steps
-R2: ~1mA through R2, 6V difference, 6V/0.001A ~= 6kOhms
-R1: 1/200 of 1mA through R1, 12V-0.6V difference, 11.4V/0.000005A ~= 2.28MOhms
+R2: ~1mA flowing through collector, which means its also flowing through R2 in series, required 6V potential on Vc means that the voltage drop on R2 is 6V , 6V/0.001A ~= 6kOhms
+R1: Ie ~= Ic, but Ib = Ic/beta, 1/200 of 1mA through base(R1), 12V-0.6V voltage drop from the transistor difference, 11.4V/0.000005A ~= 2.28MOhms
 
 # Verification
 
@@ -43,4 +43,10 @@ After changing it to the assumed beta value of 200, I was able to get acceptable
 
 ![SPICE graph, with Vc being around 6.09V and Ic, Ib being 200x apart](E1-BadBias-spice-after.png "SPICE graph, with Vc being around 6.09V and Ic, Ib being 200x apart")
 
+# Additional Test
+I did an DC Sweep from 10V to 14V(a 40% increase), and it turns out that the potential on the collector increased from 5.14V to 7.04V, which is a 37% increase.
+
+![SPICE Simulation Command, 10V to 14V Sweep on VDC](E1-BadBias-spice-sweep-cfg.png)
+
+![SPICE Graph, showing a linear increase](E1-BadBias-spice-sweep-graph.png)
 
